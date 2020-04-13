@@ -1,0 +1,60 @@
+<html>
+  <title>Smiley's Place</title>
+  <head>
+
+  </head>
+  <body>
+    <p id="Smile"><p>
+    <center>
+      <h1>Smile Big and Bright</h1>
+    </center>
+    <right>
+      <img src="Smiley.png" alt="Smile" height="250" width="400">
+    </right>
+    <center>
+      <script>
+        var day = new Date();
+        document.write("Todays date is " + day);
+      </script>
+    </center>
+    <center>
+
+    <button onclick="fun_rnd();" value="Find round">Round</button>
+    <button onclick="random();">Random</button>
+    <button onclick="get_date();">Hour</button>
+    <button onclick="get_month();">Month</button>
+      <div id="d1"></div>
+      <div id="d2"></div>
+      <div id="d3"></div>
+      <div id="d4"></div>
+
+    <script>
+      function fun_rnd(){
+        document.getElementById("d2") + Math.round();
+          var num1 = 365.23;
+          var num2 = 113.36;
+          var num3 = 56.73;
+          var num4 = 789.95;
+
+          alert(Math.round(num1));
+          alert(Math.round(num2));
+          alert(Math.round(num3));
+          alert(Math.round(num4));
+
+    }
+      function random(){
+        document.getElementById("d1").innerHTML = "random 0 to 1 : " + Math.random();
+
+    }
+      function get_date(){
+        var hour = today.getHours();
+        document.getElementById("d3").innerHTML = "hour";
+      }
+      function get_month(){
+        var month = today.getMonth();
+        document.getElementById("d4").innerHTML = "month";
+      }
+    </script>
+    </center>
+  </body>
+</html>
